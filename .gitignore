@@ -1,0 +1,15 @@
+# Data: raw downloads are reproducible via scripts/, do not commit
+data/raw/*
+!data/raw/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+
+# OS / editor
+.DS_Store
+.ipynb_checkpoints/

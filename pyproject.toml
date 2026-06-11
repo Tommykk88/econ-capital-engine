@@ -1,0 +1,23 @@
+[project]
+name = "econ-capital-engine"
+version = "0.1.0"
+description = "Economic capital aggregation engine: EVT, copulas, and Euler allocation for credit, market and catastrophe risk"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy==2.3.5",
+    "scipy==1.16.3",
+    "pandas==2.3.3",
+    "matplotlib==3.10.6",
+    "statsmodels==0.14.5",
+    "arch==8.0.0",
+    "yfinance==1.4.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2", "ruff", "black"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
